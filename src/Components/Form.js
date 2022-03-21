@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 
 function Form(props) {
+    
+    
+
     var borderColor = 'black'
     var btnBorderColor = 'none'
     if(props.mode === 'light'){
@@ -31,7 +34,6 @@ function Form(props) {
         var copyText = document.getElementById("exampleFormControlTextarea1").value
         navigator.clipboard.writeText(copyText);
     }
-
   return(
     <>  
         <h1>{props.heading}</h1>
